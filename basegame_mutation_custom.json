@@ -10,7 +10,7 @@
 	 "starting_trait": true,
 	 "cancels": [ "SAVANT", "CHEMIMBALANCE" ],
 	 "changes_to": [ "CHEMREBALANCE2" ],
-	 "category": [ "ALPHA", "ELFA", "RAPTOR", "BIRD", "FELINE", "URSINE", "LIZARD" ],
+	 "category": [ "ALPHA", "ELFA", "RAPTOR", "BIRD", "FELINE", "URSINE", "LIZARD", "CEPHALOPOD" ],
 	 "passive_mods": { "per_mod": 1 }
 },
   
@@ -370,31 +370,6 @@
 
 {
 "type": "mutation",
-"copy-from": "MUZZLE",
-	 "id": "MUZZLE_BEAST",
-     "name": { "str": "Beastly Muzzle" },
-     "points": -1,
-     "visibility": 7,
-     "ugliness": 5,
-     "mixed_effect" : true,
-     "description": "Your jaw and nose have extended into some kind of monstrous muzzle. It delivers a strong bite and looks absolutely beastly, but prevents you from wearing mouthgear.",
-     "types": [ "MUZZLE" ],
-     "prereqs": [ "MUZZLE" ],
-     "category": [ "BEAST" ],
-     "restricts_gear": [ "MOUTH" ],
-	 "attacks": 
-		 {
-			"attack_text_u" : "You chomp %s",
-			"attack_text_npc" : "%1$s chomps %2$s",
-			"blocker_mutations" : [ "FANGS" ],
-			"body_part" : "MOUTH",
-			"chance" : 18,
-			"base_damage" : { "damage_type" : "cut", "amount" : 12 }
-		 }
-},
-
-{
-"type": "mutation",
 "id": "DEX_RAT",
      "name": { "str": "Ratty Finesse" } ,
      "points": 3,
@@ -523,52 +498,6 @@
 	 "dodge_modifier": 9,
 	 "movecost_obstacle_modifier": 0.75
 },
-
-{	
-"type": "mutation",
-"id": "INSECT_STINGER",
-     "name": { "str": "Segmented Stinger" },
-     "points": 3,
-     "visibility": 6,
-     "ugliness": 3,
-     "description": "Congratulations, you are now the proud(?) owner of a long, slim, whip-fast and segmented chitinous tail that menaces with a singular curved stinger tipped with wicked barbs meant to tear and mangle skin as you pull it away from the victim.  It doesn't really do much for your balance and It's a bit cumbersome at first, but with practice, you find you can at least adapt to it enough to walk normally once more.  Have fun modifying your pants to acclimate this new limb, champ.",
-     "prereqs": [ "TAIL_STUB" ],
-     "types": [ "TAIL" ],
-	 "category": [ "INSECT" ],
-	 "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
-	 "attacks": 
-		 {
-			"attack_text_u" : "You plunge your insectile stinger deep within %s ",
-			"attack_text_npc" : "%1$s stabs at %2$s with their insectile stinger",
-			"body_part" : "MOUTH",
-			"chance" : 20,
-			"base_damage" : { "damage_type" : "stab", "amount" : 20 }
-		 }
-},
-
-{	
-"type": "mutation",
-"id": "VENOMOUS_STINGER",
-     "name": { "str": "Venomous Stinger" },
-     "points": 3,
-     "visibility": 6,
-     "ugliness": 4,
-     "description": "Congratulations, you are now the proud(?) owner of a long, slim, whip-fast and segmented chitinous tail that menaces with a singular curved stinger tipped with wicked barbs meant to tear and mangle skin as you pull it away from the victim.  It doesn't really do much for your balance and It's a bit cumbersome at first, but with practice, you find you can at least adapt to it enough to walk normally once more.  Have fun modifying your pants to acclimate this new limb, champ.",
-     "prereqs": [ "INSECT_STINGER", "POISONOUS" ],
-     "types": [ "TAIL" ],
-	 "threshreq": [ "THRESH_INSECT" ],
-	 "category": [ "INSECT" ],
-	 "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
-	 "attacks": 
-		 {
-			"attack_text_u" : "You plunge your insectile stinger deep within %s ",
-			"attack_text_npc" : "%1$s stabs at %2$s with their insectile stinger",
-			"body_part" : "MOUTH",
-			"chance" : 30,
-			"base_damage" : { "damage_type" : "acid", "amount" : 10 }
-		 }
-},
-
 {
 "//": "-----------------Custom muzzle mutations begin here-------------------",
 "type": "mutation",
@@ -594,6 +523,30 @@
 			"base_damage": { "damage_type": "cut", "amount": 12 }
 		},	
      "restricts_gear": [ "mouth" ]
+},
+
+{
+"type": "mutation",
+"id": "MUZZLE_BEAST",
+"name": { "str": "Beastly Muzzle" },
+"points": -1,
+"visibility": 7,
+"ugliness": 5,
+"mixed_effect": true,
+"description": "Your jaw and nose have extended into some kind of monstrous muzzle. It delivers a strong bite and looks absolutely beastly, but prevents you from wearing mouthgear.",
+"types": [ "MUZZLE" ],
+"prereqs": [ "MUZZLE" ],
+"category": [ "BEAST" ],
+"restricts_gear": [ "mouth" ],
+"social_modifiers": { "intimidate": 6 },
+"attacks": {
+		"attack_text_u" : "You chomp %s",
+		"attack_text_npc" : "%1$s chomps %2$s",
+		"blocker_mutations" : [ "FANGS" ],
+		"body_part" : "MOUTH",
+		"chance" : 18,
+		"base_damage" : { "damage_type" : "cut", "amount" : 12 }
+	}
 }
 
 ]

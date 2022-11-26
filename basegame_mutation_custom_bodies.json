@@ -12,7 +12,8 @@
      "threshreq": [ "THRESH_RAPTOR" ],		
      "prereqs": [ "RAPTOR_SCALES" ],		
      "prereqs2": [ "MUZZLE_RAPTOR" ],		
-	 "passive_mods": 
+	 "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "BOVINE_BODY", "PLANT_BODY", "URSINE_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "passive_mods": 
 		{
 			"str_mod": 1,
 			"dex_mod": 1			
@@ -53,7 +54,7 @@
      "category": [ "BIRD" ],
      "prereqs": [ "FEATHERS" ],		
      "prereqs2": [ "TALONS" ],	
-     "cancels": [ "LEG_TENTACLES", "HOOVES", "ROOTS1", "ROOTS2", "ROOTS3", "RAP_TALONS", "URSINE_BODY", "BOVINE_BODY",  "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "LEG_TENTACLES", "HOOVES", "ROOTS1", "ROOTS2", "ROOTS3", "RAP_TALONS", "URSINE_BODY", "BOVINE_BODY",  "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
      "restricts_gear" : [ "foot_l", "foot_r" ],
      "destroys_gear" : true,
      "armor": 
@@ -94,7 +95,7 @@
      "threshreq": [ "THRESH_URSINE" ],		
      "prereqs": [ "URSINE_FUR" ],		
      "prereqs2": [ "MUZZLE_BEAR" ],		
-     "cancels": [ "BIRD_BODY", "BOVINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "BOVINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		{
 			"str_mod": 2
@@ -113,7 +114,7 @@
      "threshreq": [ "THRESH_CATTLE" ],		
      "prereqs": [ "CATTLE_FUR" ],		
      "prereqs2": [ "MINOTAUR" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	"movecost_flatground_modifier": 0.8,
 			"passive_mods": 
 			{
@@ -130,11 +131,11 @@
      "bodytemp_modifiers" : [0, 2000],
      "bodytemp_sleep" : 1000,			
         "description": "The structure of your body and your internal physiology has more in common with flora than it does fauna. Why bother with things like 'scavenging' and 'hunting' when there is good soil to plant yourself in?.",
-     "category": [ "PLANT", "ELFA" ],
-     "threshreq": [ "THRESH_PLANT", "THRESH_ELFA" ],		
+     "category": [ "PLANT"],
+     "threshreq": [ "THRESH_PLANT" ],		
      "prereqs": [ "CHLOROMORPH" ],		
      "prereqs2": [ "FLOWERS" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "FISH_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		{
 			"str_mod": 1		
@@ -176,7 +177,7 @@
      "threshreq": [ "THRESH_BEAST" ],		
      "prereqs": [ "BEAST_FUR" ],		
      "prereqs2": [ "MUZZLE_BEAST" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "PLANT_BODY", "FISH_BODY", "LIZARD_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "PLANT_BODY", "FISH_BODY", "LIZARD_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 			"passive_mods": 
 			{
 				"str_mod": 2,
@@ -219,7 +220,7 @@
      "threshreq": [ "THRESH_LUPINE" ],		
      "prereqs": [ "LUPINE_FUR" ],		
      "prereqs2": [ "MUZZLE" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "PLANT_BODY", "FISH_BODY", "LIZARD_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "PLANT_BODY", "FISH_BODY", "LIZARD_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		 {
 			"str_mod": 2,
@@ -239,7 +240,7 @@
      "threshreq": [ "THRESH_FELINE" ],		
      "prereqs": [ "LYNX_FUR" ],		
      "prereqs2": [ "SABER_TEETH" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "PLANT_BODY", "FISH_BODY", "LIZARD_BODY", "LUPINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "RAPTOR_BODY", "PLANT_BODY", "FISH_BODY", "LIZARD_BODY", "LUPINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		 {
 			"str_mod": 1,
@@ -255,11 +256,11 @@
      "visibility": 8,
      "ugliness": -2,
      "description": "Your body structure and physiology has become similar to that of some aquatic animal. You feel faster than before, but you look very inhuman because of it. All you want to do is get back into the water.",
-     "category": [ "FISH", "CEPHALOPOD" ],
-     "threshreq": [ "THRESH_FISH", "THRESH_CEPHALOPOD" ],		
+     "category": [ "FISH" ],
+     "threshreq": [ "THRESH_FISH" ],		
      "prereqs": [ "SLEEK_SCALES" ],		
      "prereqs2": [ "RAZOR_TEETH" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY",  "RAPTOR_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY",  "RAPTOR_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		 {
 			"per_mod": 1,
@@ -300,6 +301,38 @@
 		 ]	
 },
 
+{	
+"type": "mutation",
+"id": "CEPHALOPOD_BODY",
+     "name": { "str": "Cephalopod Anatomy" },
+     "points": 1,
+     "visibility": 8,
+     "ugliness": -3,
+     "description": "Your body structure and physiology has become similar to that of a tentacled, aquatic cephalopod. You feel more flexible than before, but you look very inhuman because of it. All you want to do is get back into the water.",
+     "category": [ "CEPHALOPOD" ],
+     "threshreq": [ "THRESH_CEPHALOPOD" ],		
+     "prereqs": [ "ARM_TENTACLES_8" ],		
+     "prereqs2": [ "LEG_TENTACLES" ],		
+     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY",  "RAPTOR_BODY", "LIZARD_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+	 "passive_mods": 
+		 {
+			"dex_mod": 3			
+		 },
+	 "wet_protection": 
+		 [
+			{ "part": "head", "good": 7 },
+			{ "part": "leg_l", "good": 21 },
+			{ "part": "leg_r", "good": 21 },
+			{ "part": "foot_l", "good": 6 },
+			{ "part": "foot_r", "good": 6 },
+			{ "part": "arm_l", "good": 19 },
+			{ "part": "arm_r", "good": 19 },
+			{ "part": "hand_l", "good": 5 },
+			{ "part": "hand_r", "good": 5 },
+			{ "part": "torso", "good": 40 }
+		 ]
+},
+
 {
 "type": "mutation",
 "id": "LIZARD_BODY",
@@ -312,7 +345,7 @@
      "threshreq": [ "THRESH_LIZARD" ],		
      "prereqs": [ "SCUTES" ],		
      "prereqs2": [ "MUZZLE_LONG" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		 {
 			"str_mod": 3,
@@ -332,7 +365,7 @@
      "threshreq": [ "THRESH_RAT" ],		
      "prereqs": [ "BURROW" ],		
      "prereqs2": [ "FUR" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY", "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		 {
 			"dex_mod": 2,
@@ -353,7 +386,7 @@
      "threshreq": [ "THRESH_SPIDER" ],		
      "prereqs": [ "CHITIN_FUR3" ],		
      "prereqs2": [ "WEB_WEAVER" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY",  "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY",  "PLANT_BODY", "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "INSECT_BODY", "RAT_BODY" ],
 	 "passive_mods": 
 		 {
 			"dex_mod": 2,
@@ -394,7 +427,7 @@
      "threshreq": [ "THRESH_INSECT" ],		
      "prereqs": [ "CHITIN3" ],		
      "prereqs2": [ "INSECT_STINGER" ],		
-     "cancels": [ "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY",  "PLANT_BODY",  "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "RAT_BODY", "SPIDER_BODY" ],
+     "cancels": [ "CEPHALOPOD_BODY", "BIRD_BODY", "URSINE_BODY", "BOVINE_BODY",  "PLANT_BODY",  "RAPTOR_BODY", "FISH_BODY", "BEAST_BODY", "LUPINE_BODY", "FELINE_BODY", "RAT_BODY", "SPIDER_BODY" ],
 	 "passive_mods": 
 		 {
 			"dex_mod": 1,
