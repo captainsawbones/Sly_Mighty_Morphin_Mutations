@@ -187,7 +187,8 @@
 					{ 
 						"dex_mod": 3, 
 						"str_mod": -1 
-					}
+					},
+		 "category": [ "CEPHALOPOD" ] 
 		 }
 },
 
