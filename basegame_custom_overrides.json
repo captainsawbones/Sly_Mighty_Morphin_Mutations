@@ -23,6 +23,13 @@
 
 {
 "type": "mutation",
+"id": "EYEBULGE",
+	 "copy-from": "EYEBULGE",
+	 "extend": { "category": [ "SPIDER" ]  }
+},
+
+{
+"type": "mutation",
 "id": "THICK_SCALES",
 	 "copy-from": "THICK_SCALES",
      "extend": 
@@ -178,6 +185,16 @@
 
 {
 "type": "mutation",
+"id": "BENDY",
+	 "copy-from": "BENDY",
+	 "extend":
+		 {
+		 "category": [ "CEPHALOPOD" ] 
+		 }
+},
+
+{
+"type": "mutation",
 "id": "BENDY2",
 	 "copy-from": "BENDY2",
 	 "extend":
@@ -203,9 +220,7 @@
 			{ 
 				"dex_mod": 4, 
 				"str_mod": -1 
-			},
-		 "threshreq": [ "THRESH_CEPHALOPOD" ],
-		 "category": [ "CEPHALOPOD" ] 
+			}
 		 }
 },
 
@@ -288,6 +303,13 @@
 			 "dodge_modifier": 4,
 			 "category": [ "LIZARD", "RAPTOR", "BIRD" ]
 		 }
+},
+
+{
+"type": "mutation",
+"id": "PRETTY",
+	 "copy-from": "PRETTY",
+     "extend": { "category": [ "FELINE", "BIRD" ] }
 },
 
 {
@@ -419,9 +441,30 @@
 	 "extend":
 		 {
 		 "ugliness": -1,
-		 "changes_to": [ "CATTLE_FUR", "BEAST_FUR" ] 
+		 "changes_to": [ "CATTLE_FUR", "BEAST_FUR" ] ,
+         "category": [ "BEAST" ]
 		 },
 	 "delete": { "prereqs": [ "LIGHTFUR" ] }
+},
+
+{
+"type": "mutation",
+"id": "POISRESIST",
+	 "copy-from": "POISRESIST",
+	 "extend":
+		 {
+         "category": [ "PLANT", "ELFA" ]
+		 }
+},
+
+{
+"type": "mutation",
+"id": "SNOUT",
+	 "copy-from": "SNOUT",
+	 "extend":
+		 {
+		 "category": [ "RAPTOR" ]
+		 }
 },
 
 {
@@ -487,17 +530,6 @@
 "id": "CHAOTIC",
 	 "copy-from": "CHAOTIC",
 	 "extend": { "points": -6 }
-},
-
-{
-"type": "mutation",
-"id": "INT_SLIME",
-	 "copy-from": "INT_SLIME",
-	 "extend": 
-		 { 
-			 "threshreq": [ "THRESH_CEPHALOPOD" ],
-			 "category": [ "CEPHALOPOD" ] 
-		 }
 },
 
 {
@@ -606,7 +638,8 @@
 		 },
 	 "extend": 
 		 { 
-			 "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ]
+			 "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
+			 "category": [ "INSECT" ] 
 		 }
 },
 
@@ -661,11 +694,13 @@
 	 "delete": 
 		 { 
 			 "restricts_gear": [ "leg_l", "leg_r" ],
-			 "allow_soft_gear": true 
+			 "allow_soft_gear": true,
+			 "prereqs": [ "TAIL_LONG" ]
 		 },
 	 "extend": 
 		 { 
-			 "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ]
+			 "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
+			 "prereqs": [ "TAIL_STUB" ]
 		 }
 },
 
